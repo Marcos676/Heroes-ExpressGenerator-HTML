@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Heroes </title>
+</head>
+<body>
+    <h1><%= titulo %>  </h1>
+    <% heroes.forEach(heroe => { %>
+     <h2><%= heroe.nombre %> </h2>
+     <h4><%= heroe.profesion %> </h4>
+     <h5>Pais: <%= heroe.pais %> </h5>
+     <p><%= heroe.resenia %> </p>
+     <hr>
+    <% }) %>
+</body>
+</html>
